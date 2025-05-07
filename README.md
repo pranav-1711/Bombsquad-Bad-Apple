@@ -32,7 +32,7 @@ git clone git@github.com:pranav-1711/Bombsquad-Bad-Apple.git
 import bs_bad_apple
 ```
 
-5) Use the following command in your console:
+5) Use the following command in your console: (There will be little freeze initially)
 
 ```
 bs_bad_apple.BadApple().play()
