@@ -12,6 +12,8 @@ Big thanks to Mr.BrotherBoard for his help & contribution with BSM (Bombsquad Me
 # How to run on your machine
 1) Go to your mods folder from settings>advance>show mods folder.
 2) Open cli and clone this directory (NOTE: It wont work on workspaces)
+
+HTTPS:
 ```
 git clone https://github.com/pranav-1711/Bombsquad-Bad-Apple.git
 ```
