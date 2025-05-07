@@ -482,7 +482,7 @@ class Screen:
     """
     def __init__(
         s,
-        position: tuple[float, float, float] = (-2,1,1),
+        position: tuple[float, float, float] = (0, 0, 0),
         resolution: tuple[int, int] = (100,50),
         scale: float = 0.01,
         spacing: float | str = 'auto',
@@ -519,7 +519,7 @@ class Screen:
         s.video_loop = False
 
         px,py,pz = position
-        rx,ry = resolution
+        rx,rz = resolution
         sc = scale
         sp = s.spacing_val
         if sp == 'auto':
@@ -531,10 +531,13 @@ class Screen:
         if act and not act.expired:
              try:
                 with act.context:
-                    for i in range(ry):
+                    for i in range(rz):
                         for j in range(rx):
                             # Position pixels bottom-left to top-right
-                            p_pos = (px + j * sp, py + i * sp, pz)
+
+                            # EDIT: making screen in x-z plane
+                            # NOTE: pos-z is outside the plane.
+                            p_pos = (px + j * sp, py, pz - i * sp)
                             p = Pixel(
                                 pos=p_pos,
                                 color=(0,0,0),
