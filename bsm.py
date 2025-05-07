@@ -819,9 +819,3 @@ def calc(p, t_res = None):
             pa[arr_idx] = (r_n, g_n, b_n)
 
     return pa
-
-# brobord collide grass
-# ba_meta require api 9
-# ba_meta export plugin
-class byBordd(Plugin): pass
-
