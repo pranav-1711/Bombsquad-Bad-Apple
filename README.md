@@ -26,10 +26,16 @@ git clone git@github.com:pranav-1711/Bombsquad-Bad-Apple.git
 
 4) Go to your favorite map.
 
-5) Use the following command in your console (You can enable dev console in settings for other platforms):
+5) Import the module in the console. (You can enable dev console in settings for other platforms):
 
 ```
-Bombsquad-Bad-Apple.BadApple.play()
+import bs_bad_apple
+```
+
+5) Use the following command in your console:
+
+```
+bs_bad_apple.BadApple().play()
 ```
 
 6) You can configure additional things and read docs.
