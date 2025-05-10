@@ -19,5 +19,5 @@ class BadApple(Plugin):
         # dont change resolution, frames are 50x50 by default
         # this position looks good on football and hockey map.
         screen = bsm.Screen(position=(-3.5, 1, 3.2), resolution=(50, 50), char="@")
-        video = bsm.Video(folder_name="bapf", resolution=(50, 50))
+        video = bsm.Video(folder_name="BSM/bad_apple_ppm_frames", resolution=(50, 50))
         bs.timer(5, bs.Call(screen.load, video, 30))
